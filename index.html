@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script src="js/script.js"></script>
+
+    <body>
+
+        <h1>Verificação de Aprovação</h1>
+      
+        <div>
+          <label>Nota: <input type="number" id="nota" step="0.1"></label>
+          <label>Faltas: <input type="number" id="faltas"></label>
+          <button onclick="verificar()">Verificar</button>
+        </div>
+      
+        <div class="resultado" id="resultado"></div>
+      
+        <table>
+          <thead>
+            <tr>
+              <th>Nota</th>
+              <th>Faltas</th>
+              <th>Resultado</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="aprovado">
+              <td>≥ 7.0</td>
+              <td>≤ 20</td>
+              <td>Aprovado ✅</td>
+            </tr>
+            <tr class="reprovado">
+              <td>&lt; 7.0</td>
+              <td>≤ 20</td>
+              <td>Reprovado por Nota ❌</td>
+            </tr>
+            <tr class="reprovado">
+              <td>≥ 7.0</td>
+              <td>&gt; 20</td>
+              <td>Reprovado por Faltas ❌</td>
+            </tr>
+            <tr class="reprovado">
+              <td>&lt; 7.0</td>
+              <td>&gt; 20</td>
+              <td>Reprovado por Nota e Faltas ❌</td>
+            </tr>
+          </tbody>
+        </table>
+</body>
+</html>
