@@ -21,36 +21,11 @@
       
         <div class="resultado" id="resultado"></div>
       
-        <table>
-          <thead>
-            <tr>
-              <th>Nota</th>
-              <th>Faltas</th>
-              <th>Resultado</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr class="aprovado">
-              <td>≥ 7.0</td>
-              <td>≤ 20</td>
-              <td>Aprovado ✅</td>
-            </tr>
-            <tr class="reprovado">
-              <td>&lt; 7.0</td>
-              <td>≤ 20</td>
-              <td>Reprovado por Nota ❌</td>
-            </tr>
-            <tr class="reprovado">
-              <td>≥ 7.0</td>
-              <td>&gt; 20</td>
-              <td>Reprovado por Faltas ❌</td>
-            </tr>
-            <tr class="reprovado">
-              <td>&lt; 7.0</td>
-              <td>&gt; 20</td>
-              <td>Reprovado por Nota e Faltas ❌</td>
-            </tr>
-          </tbody>
-        </table>
+       <ul>
+    <li class="permitido">✅ Nome Válido + Senha Correta → Acesso Permitido</li>
+    <li class="negado">❌ Nome Inválido + Senha Correta → Acesso Negado</li>
+    <li class="negado">❌ Nome Válido + Senha Incorreta → Acesso Negado</li>
+    <li class="negado">❌ Nome Inválido + Senha Incorreta → Acesso Negado</li>
+  </ul>
 </body>
 </html>
